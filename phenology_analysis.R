@@ -8,7 +8,7 @@ lapply(packages_list, require, character.only = TRUE)
 #1--------Cleaning tables in .csv format acquired from GEE-------------
 
 #df in csv format containing variables in this order: date, index, sample ID, species
-df =  read.csv("C:/Ewa/Barlinek_reviews2/Barlinek_2017_2022_MTCI_pts.csv")
+df =  read.csv("...")
 
 df$system.index = substr(df$system.index, 1, 8) %>%
   as.Date(format =  "%Y%m%d")
